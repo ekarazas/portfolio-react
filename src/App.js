@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
+// Importing background animation
 import ParticleBackground from "./components/ParticleBackground";
+// Importing components
 
 const App = () => {
   return (

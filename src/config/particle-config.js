@@ -1,10 +1,10 @@
 const particlesConfig = {
   particles: {
     number: {
-      value: 50,
+      value: 500,
       density: {
         enable: true,
-        value_area: 700,
+        value_area: 9000,
       },
     },
     color: {
@@ -72,19 +72,19 @@ const particlesConfig = {
     events: {
       onhover: {
         enable: true,
-        mode: "repulse",
+        mode: "grab",
       },
       onclick: {
-        enable: true,
+        enable: false,
         mode: "push",
       },
       resize: true,
     },
     modes: {
       grab: {
-        distance: 400,
+        distance: 220,
         line_linked: {
-          opacity: 1,
+          opacity: 0.4,
         },
       },
       bubble: {

@@ -1,5 +1,10 @@
 body {
   background-color: #112537;
+  font-family: "Poppins", sans-serif;
+}
+
+#tsparticles {
+  height: 100vh;
 }
 
 .center-all {
