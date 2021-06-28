@@ -1,7 +1,13 @@
 import React from "react";
+import * as S from "./Home.style";
+import HomeTitle from "../../components/HomeTitle/HomeTitle";
 
 const Home = () => {
-  return <h1>Hello React</h1>;
+  return (
+    <S.CenteredDiv>
+      <HomeTitle />
+    </S.CenteredDiv>
+  );
 };
 
 export default Home;

@@ -24,7 +24,7 @@ export const Menu = styled.nav`
 `;
 
 export const StyledLink = styled(Link)`
-  color: #fff;
+  color: #cecba8;
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
