@@ -21,7 +21,7 @@ export const Section = styled.section`
 export const LeftBlock = styled.div`
   min-width: 90%;
 
-  @media only screen and (min-width: 1120px) {
+  @media only screen and (min-width: 1024px) {
     min-width: 19rem;
     margin: 0;
   }

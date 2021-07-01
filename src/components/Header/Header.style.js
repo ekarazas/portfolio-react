@@ -30,7 +30,7 @@ export const StyledLink = styled(Link)`
   position: relative;
   transition: ease-in 0.2s;
 
-  @media only screen and (min-width: 769px) {
+  @media only screen and (min-width: 1024px) {
     font-size: 0.9rem;
 
     &:hover {

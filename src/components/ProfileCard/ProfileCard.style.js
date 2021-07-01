@@ -71,7 +71,7 @@ export const Contacts = styled.a`
     margin-right: 0.5rem;
   }
 
-  @media only screen and (min-width: 1120px) {
+  @media only screen and (min-width: 1024px) {
     &:hover {
       color: #00fff3;
     }
@@ -106,7 +106,7 @@ export const FooterLink = styled.a`
   align-items: center;
   justify-content: center;
 
-  @media only screen and (min-width: 1120px) {
+  @media only screen and (min-width: 1024px) {
     &:hover {
       color: #00fff3;
     }
