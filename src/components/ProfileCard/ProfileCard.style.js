@@ -5,8 +5,8 @@ export const Card = styled.div`
   text-align: center;
   background: linear-gradient(
     to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
   );
   padding: 2rem 1.9rem 0 1.5rem;
   display: flex;
@@ -98,7 +98,7 @@ export const FooterIcon = styled.img`
 `;
 
 export const FooterLink = styled.a`
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 0.7rem;
   text-decoration: none;
   color: #131313;
   font-weight: 700;
