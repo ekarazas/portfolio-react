@@ -16,7 +16,9 @@ const About = () => {
         </S.LeftBlock>
         <div className="right-side-container">
           <div className="rightside-card">
-            
+            <a href="www.youtube.com">
+              <div>DOWNLOAD CV</div>
+            </a>
           </div>
         </div>
       </S.Section>

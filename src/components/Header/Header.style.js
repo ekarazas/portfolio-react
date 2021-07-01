@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Header = styled.header`
-  margin-bottom: 3rem;
   background: transparent;
   min-height: 4.2rem;
   width: 100%;
