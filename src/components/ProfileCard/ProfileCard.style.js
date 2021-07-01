@@ -82,11 +82,17 @@ export const Contacts = styled.a`
 `;
 
 export const ProfileFooter = styled.div`
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 8rem;
   border-top: 0.05rem solid #112537;
+`;
+
+export const FooterIcon = styled.img`
+  margin-top: -0.25rem;
+  height: 1.2rem;
 `;
 
 export const FooterLink = styled.a`
@@ -100,7 +106,12 @@ export const FooterLink = styled.a`
 
   @media only screen and (min-width: 1120px) {
     &:hover {
-      color: red;
+      color: #00fff3;
+    }
+
+    &:hover ${FooterIcon} {
+      filter: invert(94%) sepia(68%) saturate(6075%) hue-rotate(92deg)
+        brightness(108%) contrast(101%);
     }
   }
 `;
@@ -108,8 +119,4 @@ export const FooterLink = styled.a`
 export const FooterText = styled.div`
   font-weight: 700;
   margin-right: 0.5rem;
-`;
-
-export const FooterIcon = styled.img`
-  height: 1.3rem;
 `;
