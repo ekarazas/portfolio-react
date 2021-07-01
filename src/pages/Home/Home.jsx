@@ -1,12 +1,15 @@
 import React from "react";
-import * as S from "./Home.style";
+import CenteredDiv from "../../components/CenteredDiv/CenteredDiv";
 import HomeTitle from "../../components/HomeTitle/HomeTitle";
+import * as S from "./Home.style";
 
 const Home = () => {
   return (
-    <S.CenteredDiv>
-      <HomeTitle />
-    </S.CenteredDiv>
+    <S.Home>
+      <CenteredDiv>
+        <HomeTitle />
+      </CenteredDiv>
+    </S.Home>
   );
 };
 

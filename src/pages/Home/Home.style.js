@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const CenteredDiv = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+export const Home = styled.main`
   width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
