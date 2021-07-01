@@ -71,13 +71,15 @@ export const Contacts = styled.a`
     margin-right: 0.5rem;
   }
 
-  &:hover {
-    color: #00fff3;
-  }
+  @media only screen and (min-width: 1120px) {
+    &:hover {
+      color: #00fff3;
+    }
 
-  &:hover ${ContactIcons} {
-    filter: invert(94%) sepia(68%) saturate(6075%) hue-rotate(92deg)
-      brightness(108%) contrast(101%);
+    &:hover ${ContactIcons} {
+      filter: invert(94%) sepia(68%) saturate(6075%) hue-rotate(92deg)
+        brightness(108%) contrast(101%);
+    }
   }
 `;
 
