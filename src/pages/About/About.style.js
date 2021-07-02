@@ -5,9 +5,10 @@ export const About = styled.main`
   margin-bottom: 6rem;
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @media only screen and (min-width: 1100px) {
+    width: 1100px;
+    margin: 6rem auto;
+  }
 `;
 
 export const Section = styled.section`
@@ -17,7 +18,6 @@ export const Section = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
   }
 `;
 
@@ -30,6 +30,7 @@ export const LeftBlock = styled.div`
   }
 
   @media only screen and (min-width: 1024px) {
+    margin: 0 0 0 2rem;
   }
 `;
 
@@ -42,19 +43,36 @@ export const RightBlock = styled.div`
   }
 
   @media only screen and (min-width: 1024px) {
+    margin: 0 2rem 0 0;
   }
 `;
 
 export const RightCard = styled.div`
   text-align: left;
-  border-radius: 0.5rem;
   background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.5),
     rgba(255, 255, 255, 0.5)
   );
+  border-radius: 0.5rem;
   padding: 2rem;
-  box-shadow: 0.6rem 0.6rem 11rem rgba(0, 0, 0, 0.5);
+
+  @media only screen and (min-width: 1024px) {
+    border-radius: 0 0.5rem 0.5rem 0;
+    height: 28rem;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+`;
+
+export const ContentBlock = styled.section`
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  @media only screen and (min-width: 785px) {
+    margin-bottom: 0;
+  }
 `;
 
 export const Subtitle = styled.h2``;
@@ -67,16 +85,20 @@ export const FirstRow = styled.div`
   margin-bottom: 1rem;
 `;
 
-export const TextBlock = styled.div``;
+export const TextBlock = styled.div`
+  @media only screen and (min-width: 785px) {
+    width: 80%;
+  }
+`;
 
 export const SecondRow = styled.div``;
 
 export const FirstColumn = styled.div`
   margin-bottom: 1rem;
+  flex: 50;
 `;
 
-export const SmallTitle = styled.div`
-  font-weight: 700;
+export const SmallTitle = styled.h3`
   margin: 1rem 0;
 `;
 
@@ -109,4 +131,27 @@ export const Contact = styled.a`
   }
 `;
 
-export const SecondColumn = styled.div``;
+export const SecondColumn = styled.div`
+  flex: 46;
+`;
+
+export const SkillColumn = styled.div`
+  &:first-child {
+    margin-bottom: 2rem;
+  }
+
+  @media only screen and (min-width: 785px) {
+    flex: 1;
+
+    &:first-child {
+      margin-bottom: 0;
+      margin-right: 2rem;
+    }
+  }
+`;
+
+export const FlexContainer = styled.div`
+  @media only screen and (min-width: 785px) {
+    display: flex;
+  }
+`;

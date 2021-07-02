@@ -11,7 +11,6 @@ export const Card = styled.div`
   padding: 2rem 2.4rem 0;
   display: flex;
   flex-direction: column;
-  box-shadow: 0.6rem 0.6rem 11rem rgba(0, 0, 0, 0.5);
 `;
 
 export const ImageBlock = styled.div`
@@ -21,7 +20,7 @@ export const ImageBlock = styled.div`
   height: 15rem;
   width: 12rem;
   top: -4rem;
-  box-shadow: 0 0.2rem 11rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.5rem 7rem rgba(0, 0, 0, 0.3);
 `;
 
 export const Image = styled.img`
