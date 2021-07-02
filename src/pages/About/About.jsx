@@ -24,10 +24,14 @@ const About = () => {
               </S.Subtitle>
               <S.FirstRow>
                 <S.TextBlock>
-                  I am Ryan Adlard, web designer from USA, California. I have
-                  rich experience in web site design and building and
-                  customization, also I am good at wordpress. I love to talk
-                  with you about our unique.
+                  Passionate and goal-oriented individual with fresh knowledge
+                  of front-end web development using popular libraries and
+                  frameworks like <b>React</b>, <b>Vue.js</b>. I have above
+                  average skills of <b>HTML</b>, <b>CSS</b> and
+                  <b> JavaScript</b>. I also have knowledge of working with
+                  <b>NodeJS</b> environment and <b>MySQL</b> databases.
+                  Furthermore, I have experience working with development
+                  platforms such as <b>Digital Ocean</b> and <b>Firebase</b>.
                 </S.TextBlock>
               </S.FirstRow>
               <S.SecondRow>

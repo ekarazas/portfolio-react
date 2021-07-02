@@ -88,7 +88,7 @@ export const ProfileFooter = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 8rem;
-  border-top: 0.05rem solid #112537;
+  border-top: 0.05rem solid rgba(255, 255, 255, 0.5); ;
 `;
 
 export const FooterIcon = styled.img`

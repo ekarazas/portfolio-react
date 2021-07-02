@@ -5,6 +5,7 @@ export const About = styled.main`
   margin-bottom: 6rem;
   height: 100%;
   width: 100%;
+
   @media only screen and (min-width: 1100px) {
     width: 1100px;
     margin: 6rem auto;
@@ -37,12 +38,16 @@ export const LeftBlock = styled.div`
 export const RightBlock = styled.div`
   position: relative;
   margin: 0 1rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
 
   @media only screen and (min-width: 350px) {
     margin: 0 2rem;
   }
 
   @media only screen and (min-width: 1024px) {
+    border-radius: 0 0.5rem 0.5rem 0;
+
     margin: 0 2rem 0 0;
   }
 `;
@@ -54,13 +59,10 @@ export const RightCard = styled.div`
     rgba(255, 255, 255, 0.5),
     rgba(255, 255, 255, 0.5)
   );
-  border-radius: 0.5rem;
   padding: 2rem;
 
   @media only screen and (min-width: 1024px) {
-    border-radius: 0 0.5rem 0.5rem 0;
     height: 28rem;
-    overflow: hidden;
     overflow-y: scroll;
   }
 `;
@@ -86,20 +88,24 @@ export const FirstRow = styled.div`
 `;
 
 export const TextBlock = styled.div`
-  @media only screen and (min-width: 785px) {
-    width: 80%;
-  }
+  margin-bottom: 1rem;
 `;
 
 export const SecondRow = styled.div``;
 
 export const FirstColumn = styled.div`
   margin-bottom: 1rem;
-  flex: 50;
+  flex: 1;
+
+  @media only screen and (min-width: 785px) {
+    margin-bottom: 0;
+    padding-right: 1rem;
+    border-right: 0.05rem solid rgba(255, 255, 255, 0.3);
+  }
 `;
 
 export const SmallTitle = styled.h3`
-  margin: 1rem 0;
+  margin: 0 0 1rem 0;
 `;
 
 export const ContactBlock = styled.div`
@@ -132,7 +138,11 @@ export const Contact = styled.a`
 `;
 
 export const SecondColumn = styled.div`
-  flex: 46;
+  flex: 1;
+
+  @media only screen and (min-width: 785px) {
+    padding-left: 1rem;
+  }
 `;
 
 export const SkillColumn = styled.div`
