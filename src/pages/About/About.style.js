@@ -11,6 +11,7 @@ export const About = styled.main`
 `;
 
 export const Section = styled.section`
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
