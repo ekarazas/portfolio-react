@@ -51,6 +51,7 @@ export const CareerTitle = styled.h4`
 export const ContactsBlock = styled.div`
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 `;
 
 export const ContactIcons = styled.img`

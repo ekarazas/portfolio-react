@@ -29,7 +29,7 @@ const About = () => {
                   frameworks like <b>React</b>, <b>Vue.js</b>. I have above
                   average skills of <b>HTML</b>, <b>CSS</b> and
                   <b> JavaScript</b>. I also have knowledge of working with
-                  <b>NodeJS</b> environment and <b>MySQL</b> databases.
+                  <b> NodeJS</b> environment and <b>MySQL</b> databases.
                   Furthermore, I have experience working with development
                   platforms such as <b>Digital Ocean</b> and <b>Firebase</b>.
                 </S.TextBlock>
