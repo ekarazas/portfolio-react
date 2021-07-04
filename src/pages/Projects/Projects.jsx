@@ -8,7 +8,7 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch("http://206.81.27.119:1337/projects")
+    fetch("https://206.81.27.119:1337/projects")
       .then((res) => res.json())
       .then((data) => setProjects(data));
   }, []);
