@@ -12,14 +12,17 @@ const ProfileCard = ({ profileImage, name, career }) => {
         <S.NameTitle>{name}</S.NameTitle>
         <S.CareerTitle>{career}</S.CareerTitle>
         <S.ContactsBlock>
-          <S.Contacts href="https://www.linkedin.com/in/eivinas-kara%C5%BEas-a764361ba/">
+          <S.Contacts
+            href="https://www.linkedin.com/in/eivinas-kara%C5%BEas-a764361ba/"
+            target="_blank"
+          >
             <S.ContactIcons
               src="https://image.flaticon.com/icons/png/512/1384/1384014.png"
               alt="LinkedIn Logo"
             />
             Linkedin
           </S.Contacts>
-          <S.Contacts href="https://github.com/ekarazas">
+          <S.Contacts href="https://github.com/ekarazas" target="_blank">
             <S.ContactIcons
               src="https://image.flaticon.com/icons/png/512/733/733609.png"
               alt="GitHub Logo"

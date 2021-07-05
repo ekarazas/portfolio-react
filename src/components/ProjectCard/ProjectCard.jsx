@@ -22,7 +22,7 @@ function ProjectCard({ portfolio }) {
             <S.CardContent>
               <S.Title>{project.title}</S.Title>
               {project.url && (
-                <S.SocialLink href={project.url}>
+                <S.SocialLink href={project.url} target="_blank">
                   <S.FlexLink>
                     <S.Icon className="website" />
                     Check the website
@@ -30,14 +30,14 @@ function ProjectCard({ portfolio }) {
                 </S.SocialLink>
               )}
 
-              <S.SocialLink href={project.front_url}>
+              <S.SocialLink href={project.front_url} target="_blank">
                 <S.FlexLink>
                   <S.Icon className="github" />
                   GitHub Frontend
                 </S.FlexLink>
               </S.SocialLink>
               {project.back_url && (
-                <S.SocialLink href={project.back_url}>
+                <S.SocialLink href={project.back_url} target="_blank">
                   <S.FlexLink>
                     <S.Icon className="github" />
                     GitHub Backend

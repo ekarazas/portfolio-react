@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import * as S from "./About.style";
 import ProfileCard from "../../components/ProfileCard/ProfileCard";
 import ProfilePhoto from "../../assets/Photo.jpg";
@@ -6,6 +6,28 @@ import ProfilePhoto from "../../assets/Photo.jpg";
 import SkillsLevel from "../../components/SkillsLevel/SkillsLevel";
 
 const About = () => {
+  const [workingSkills, setWorkingSkills] = useState([]);
+  const [softwareSkills, setSoftwareSkills] = useState([]);
+  const [languageSkills, setLanguageSkills] = useState([]);
+
+  useEffect(() => {
+    fetch("http://206.81.27.119:1337/working-skills")
+      .then((res) => res.json())
+      .then((data) => setWorkingSkills(data));
+  }, []);
+
+  useEffect(() => {
+    fetch("http://206.81.27.119:1337/software-skills")
+      .then((res) => res.json())
+      .then((data) => setSoftwareSkills(data));
+  }, []);
+
+  useEffect(() => {
+    fetch("http://206.81.27.119:1337/language-skills")
+      .then((res) => res.json())
+      .then((data) => setLanguageSkills(data));
+  }, []);
+
   return (
     <S.About>
       <S.Section>
@@ -28,8 +50,8 @@ const About = () => {
                   of front-end web development using popular libraries and
                   frameworks like <b>React</b>, <b>Vue.js</b>. I have above
                   average skills of <b>HTML</b>, <b>CSS</b> and
-                  <b> JavaScript</b>. I also have knowledge of working with
-                  <b> NodeJS</b> environment and <b>MySQL</b> databases.
+                  <b> JavaScript</b>. I also have intermediate knowledge of
+                  <b> Node.js</b> environment and <b>MySQL</b> databases.
                   Furthermore, I have experience working with development
                   platforms such as <b>Digital Ocean</b> and <b>Firebase</b>.
                 </S.TextBlock>
@@ -59,8 +81,14 @@ const About = () => {
                   </S.FirstColumn>
                   <S.SecondColumn>
                     <S.SmallTitle>Languages</S.SmallTitle>
-                    <SkillsLevel skill="English" level="80" />
-                    <SkillsLevel skill="Lithuanian (native)" level="100" />
+                    {languageSkills &&
+                      languageSkills.map((skill) => (
+                        <SkillsLevel
+                          key={skill.id}
+                          skill={skill.language_skill}
+                          level={skill.level}
+                        />
+                      ))}
                   </S.SecondColumn>
                 </S.FlexContainer>
               </S.SecondRow>
@@ -72,20 +100,25 @@ const About = () => {
               <S.FlexContainer>
                 <S.SkillColumn>
                   <S.SmallTitle>Working skills</S.SmallTitle>
-                  <SkillsLevel skill="Initiative" level="90" />
-                  <SkillsLevel skill="Communication" level="80" />
-                  <SkillsLevel skill="Quick learner" level="100" />
-                  <SkillsLevel skill="Team work" level="70" />
-                  <SkillsLevel skill="Time management" level="90" />
+                  {workingSkills &&
+                    workingSkills.map((workingSkill) => (
+                      <SkillsLevel
+                        key={workingSkill.id}
+                        skill={workingSkill.skill}
+                        level={workingSkill.level}
+                      />
+                    ))}
                 </S.SkillColumn>
                 <S.SkillColumn>
                   <S.SmallTitle>Software skills</S.SmallTitle>
-                  <SkillsLevel skill="HTML/CSS" level="70" />
-                  <SkillsLevel skill="JavaScript" level="70" />
-                  <SkillsLevel skill="Node.js" level="60" />
-                  <SkillsLevel skill="React.js" level="70" />
-                  <SkillsLevel skill="Vue.js" level="50" />
-                  <SkillsLevel skill="MySQL" level="70" />
+                  {softwareSkills &&
+                    softwareSkills.map((skill) => (
+                      <SkillsLevel
+                        key={skill.id}
+                        skill={skill.skill}
+                        level={skill.level}
+                      />
+                    ))}
                 </S.SkillColumn>
               </S.FlexContainer>
             </S.ContentBlock>
