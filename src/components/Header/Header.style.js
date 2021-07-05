@@ -2,16 +2,16 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Header = styled.header`
+  position: relative;
   background: transparent;
-  min-height: 4.2rem;
-  width: 100%;
-`;
-
-export const Menu = styled.nav`
+  height: 4rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0;
-  padding: 1.5rem 0.7rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 100%;
 
   @media only screen and (min-width: 375px) {
     max-width: 375px;
@@ -19,8 +19,10 @@ export const Menu = styled.nav`
   }
 `;
 
+export const Menu = styled.nav``;
+
 export const StyledLink = styled(Link)`
-  color: #e4e3d8;
+  color: #f8f7ed;
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;

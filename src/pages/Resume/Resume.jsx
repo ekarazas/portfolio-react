@@ -47,7 +47,7 @@ const Resume = () => {
                     </S.SmallTitle>
                     {experiences &&
                       experiences.map((experience) => (
-                        <S.ResumeItem>
+                        <S.ResumeItem key={experience.id}>
                           <S.Date>{experience.year}</S.Date>
                           <S.Name>{experience.title}</S.Name>
                           <S.InstituteName>
@@ -68,7 +68,7 @@ const Resume = () => {
                     </S.SmallTitle>
                     {educations &&
                       educations.map((education) => (
-                        <S.ResumeItem>
+                        <S.ResumeItem key={education.id}>
                           <S.Date>{education.year}</S.Date>
                           <S.Name>{education.degreeTitle}</S.Name>
                           <S.InstituteName>

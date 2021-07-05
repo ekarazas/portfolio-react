@@ -1,14 +1,16 @@
 import styled from "styled-components";
 
 export const Resume = styled.main`
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-  height: 100%;
+  min-height: calc(100vh - 8rem);
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
 
-  @media only screen and (min-width: 1100px) {
-    width: 1100px;
-    margin: 6rem auto;
+  @media only screen and (min-width: 1024px) {
+    width: 1024px;
+    margin: 0 auto;
   }
 `;
 

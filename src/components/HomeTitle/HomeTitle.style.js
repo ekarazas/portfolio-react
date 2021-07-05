@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const RegularText = styled.div`
+  position: relative;
   font-size: 1.7rem;
   text-align: center;
-  color: #e4e3d8;
+  color: #f8f7ed;
   padding: 0 0.5rem;
 
   @media only screen and (min-width: 700px) {
