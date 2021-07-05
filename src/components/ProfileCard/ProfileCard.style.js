@@ -44,12 +44,22 @@ export const ContentBlock = styled.div`
 export const NameTitle = styled.h2`
   margin: 0;
   margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+
+  @media only screen and (min-width: 786px) {
+    font-size: 1.4rem;
+  }
 `;
 
 export const CareerTitle = styled.h4`
   margin: 0;
   margin-bottom: 0.5rem;
   margin-bottom: 1rem;
+  font-size: 0.9rem;
+
+  @media only screen and (min-width: 786px) {
+    font-size: 1rem;
+  }
 `;
 
 export const ContactsBlock = styled.div`
@@ -70,9 +80,14 @@ export const Contacts = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 0.85rem;
 
   &:not(:last-child) {
     margin-right: 0.5rem;
+  }
+
+  @media only screen and (min-width: 786px) {
+    font-size: 0.95rem;
   }
 
   @media only screen and (min-width: 1024px) {
@@ -109,6 +124,11 @@ export const FooterLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 0.8rem;
+
+  @media only screen and (min-width: 786px) {
+    font-size: 0.9rem;
+  }
 
   @media only screen and (min-width: 1024px) {
     &:hover {

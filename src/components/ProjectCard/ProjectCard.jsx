@@ -28,12 +28,15 @@ function ProjectCard({ projects }) {
                 </S.SocialLink>
               )}
 
-              <S.SocialLink href={project.front_url} target="_blank">
-                <S.FlexLink>
-                  <S.Icon className="github" />
-                  GitHub Frontend
-                </S.FlexLink>
-              </S.SocialLink>
+              {project.front_url && (
+                <S.SocialLink href={project.front_url} target="_blank">
+                  <S.FlexLink>
+                    <S.Icon className="github" />
+                    GitHub Frontend
+                  </S.FlexLink>
+                </S.SocialLink>
+              )}
+
               {project.back_url && (
                 <S.SocialLink href={project.back_url} target="_blank">
                   <S.FlexLink>

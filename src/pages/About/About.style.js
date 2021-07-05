@@ -148,17 +148,11 @@ export const SecondColumn = styled.div`
 `;
 
 export const SkillColumn = styled.div`
-  &:first-child {
-    margin-bottom: 2rem;
-  }
+  margin-bottom: 2rem;
+  width: 100%;
 
   @media only screen and (min-width: 785px) {
-    flex: 1;
-
-    &:first-child {
-      margin-bottom: 0;
-      margin-right: 2rem;
-    }
+    margin-bottom: 0;
   }
 `;
 

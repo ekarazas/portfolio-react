@@ -32,6 +32,11 @@ export const Container = styled.div`
 
 export const Title = styled.h3`
   margin-top: 1rem;
+  font-size: 0.9rem;
+
+  @media only screen and (min-width: 786px) {
+    font-size: 1.1rem;
+  }
 `;
 
 export const Icon = styled.div`
@@ -80,6 +85,7 @@ export const SocialLink = styled.a`
   font-weight: bold;
   text-decoration: none;
   color: #131313;
+
   @media only screen and (min-width: 1024px) {
     &:hover {
       color: #00fff3;
@@ -97,6 +103,11 @@ export const FlexLink = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+
+  @media only screen and (min-width: 786px) {
+    font-size: 1rem;
+  }
 `;
 
 export const CardContent = styled.div`

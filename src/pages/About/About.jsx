@@ -1,34 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import * as S from "./About.style";
 import ProfilePhoto from "../../assets/ProfileImage.jpg";
+import languageSkills from "../../utilities/languageSkills";
+import softwareSkills from "../../utilities/softwareSkills";
 
 // components
 import ProfileCard from "../../components/ProfileCard/ProfileCard";
 import SkillsLevel from "../../components/SkillsLevel/SkillsLevel";
 
 const About = () => {
-  const [workingSkills, setWorkingSkills] = useState([]);
-  const [softwareSkills, setSoftwareSkills] = useState([]);
-  const [languageSkills, setLanguageSkills] = useState([]);
-
-  useEffect(() => {
-    fetch("http://206.81.27.119:1337/working-skills")
-      .then((res) => res.json())
-      .then((data) => setWorkingSkills(data));
-  }, []);
-
-  useEffect(() => {
-    fetch("http://206.81.27.119:1337/software-skills")
-      .then((res) => res.json())
-      .then((data) => setSoftwareSkills(data));
-  }, []);
-
-  useEffect(() => {
-    fetch("http://206.81.27.119:1337/language-skills")
-      .then((res) => res.json())
-      .then((data) => setLanguageSkills(data));
-  }, []);
-
   return (
     <S.About>
       <S.Section>
@@ -99,17 +79,6 @@ const About = () => {
                 <S.ColoredSpan>My</S.ColoredSpan> skills
               </S.Subtitle>
               <S.FlexContainer>
-                <S.SkillColumn>
-                  <S.SmallTitle>Working skills</S.SmallTitle>
-                  {workingSkills &&
-                    workingSkills.map((workingSkill) => (
-                      <SkillsLevel
-                        key={workingSkill.id}
-                        skill={workingSkill.skill}
-                        level={workingSkill.level}
-                      />
-                    ))}
-                </S.SkillColumn>
                 <S.SkillColumn>
                   <S.SmallTitle>Software skills</S.SmallTitle>
                   {softwareSkills &&
