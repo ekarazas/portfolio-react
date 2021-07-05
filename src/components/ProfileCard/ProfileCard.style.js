@@ -118,10 +118,12 @@ export const FooterIcon = styled.img`
 `;
 
 export const FooterLink = styled.a`
+  width: 100%;
   text-decoration: none;
   color: #131313;
   font-weight: 700;
   display: flex;
+  justify-content: center;
   align-items: center;
   font-size: 0.8rem;
 
