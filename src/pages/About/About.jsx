@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import * as S from "./About.style";
-import ProfileCard from "../../components/ProfileCard/ProfileCard";
-import ProfilePhoto from "../../assets/Photo.jpg";
+import ProfilePhoto from "../../assets/ProfileImage.jpg";
 
+// components
+import ProfileCard from "../../components/ProfileCard/ProfileCard";
 import SkillsLevel from "../../components/SkillsLevel/SkillsLevel";
 
 const About = () => {

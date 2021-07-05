@@ -1,24 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import * as S from "./Resume.style";
+import ProfilePhoto from "../../assets/ProfileImage.jpg";
+import experienceData from "../../utilities/experienceData";
+import educationData from "../../utilities/educationData";
+
+// components
 import ProfileCard from "../../components/ProfileCard/ProfileCard";
-import ProfilePhoto from "../../assets/Photo.jpg";
 
 const Resume = () => {
-  const [experiences, setExperiences] = useState([]);
-  const [educations, setEducations] = useState([]);
-
-  useEffect(() => {
-    fetch("http://206.81.27.119:1337/experiences")
-      .then((res) => res.json())
-      .then((data) => setExperiences(data));
-  }, []);
-
-  useEffect(() => {
-    fetch("http://206.81.27.119:1337/educations")
-      .then((res) => res.json())
-      .then((data) => setEducations(data));
-  }, []);
-
   return (
     <S.Resume>
       <S.Section>
@@ -33,7 +22,7 @@ const Resume = () => {
           <S.RightCard>
             <S.ContentBlock>
               <S.Subtitle>
-                <S.ColoredSpan>Re</S.ColoredSpan>sume
+                <S.ColoredSpan>R</S.ColoredSpan>esume
               </S.Subtitle>
               <S.FirstRow>
                 <S.FlexContainer>
@@ -45,8 +34,8 @@ const Resume = () => {
                       />
                       Experience
                     </S.SmallTitle>
-                    {experiences &&
-                      experiences.map((experience) => (
+                    {experienceData &&
+                      experienceData.map((experience) => (
                         <S.ResumeItem key={experience.id}>
                           <S.Date>{experience.year}</S.Date>
                           <S.Name>{experience.title}</S.Name>
@@ -66,8 +55,8 @@ const Resume = () => {
                       />
                       Education
                     </S.SmallTitle>
-                    {educations &&
-                      educations.map((education) => (
+                    {educationData &&
+                      educationData.map((education) => (
                         <S.ResumeItem key={education.id}>
                           <S.Date>{education.year}</S.Date>
                           <S.Name>{education.degreeTitle}</S.Name>

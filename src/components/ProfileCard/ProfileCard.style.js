@@ -11,6 +11,10 @@ export const Card = styled.div`
   padding: 2rem 2.4rem 0;
   display: flex;
   flex-direction: column;
+
+  @media only screen and (min-width: 1024px) {
+    padding: 2rem 3.5rem 0;
+  }
 `;
 
 export const ImageBlock = styled.div`

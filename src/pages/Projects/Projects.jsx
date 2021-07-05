@@ -1,18 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import * as S from "./Projects.style";
+import projectsData from "../../utilities/projectsData";
+import ProfilePhoto from "../../assets/ProfileImage.jpg";
+
+// components
 import ProfileCard from "../../components/ProfileCard/ProfileCard";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
-import ProfilePhoto from "../../assets/Photo.jpg";
 
 const Projects = () => {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    fetch("http://206.81.27.119:1337/projects")
-      .then((res) => res.json())
-      .then((data) => setProjects(data));
-  }, []);
-
   return (
     <S.Projects>
       <S.Section>
@@ -31,7 +26,7 @@ const Projects = () => {
               </S.Subtitle>
               <S.FirstRow>
                 <S.FlexContainer>
-                  <ProjectCard portfolio={projects} />
+                  <ProjectCard projects={projectsData} />
                 </S.FlexContainer>
               </S.FirstRow>
             </S.ContentBlock>

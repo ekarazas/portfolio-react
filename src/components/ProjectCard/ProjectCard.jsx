@@ -1,12 +1,12 @@
 import React from "react";
 import * as S from "./ProjectCard.style";
 
-function ProjectCard({ portfolio }) {
+function ProjectCard({ projects }) {
   return (
-    <S.FlexBlock projects={portfolio}>
-      {!portfolio && "There are no projects yet."}
-      {portfolio &&
-        portfolio.map((project) => (
+    <S.FlexBlock projects={projects}>
+      {!projects && "There are no projects yet."}
+      {projects &&
+        projects.map((project) => (
           <S.Container
             key={project.id}
             className={project.id % 2 === 0 ? "margin-left" : "margin-right"}
@@ -15,9 +15,7 @@ function ProjectCard({ portfolio }) {
               className={
                 project.id % 2 === 0 ? "translate-left" : "translate-right"
               }
-              src={
-                "http://206.81.27.119:1337" + project.image.formats.large.url
-              }
+              src={project.image}
             />
             <S.CardContent>
               <S.Title>{project.title}</S.Title>
