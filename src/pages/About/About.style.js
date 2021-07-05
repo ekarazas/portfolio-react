@@ -75,7 +75,9 @@ export const ContentBlock = styled.section`
   }
 
   @media only screen and (min-width: 785px) {
-    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 `;
 
