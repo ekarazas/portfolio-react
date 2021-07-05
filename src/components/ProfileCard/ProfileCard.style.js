@@ -103,12 +103,13 @@ export const Contacts = styled.a`
 `;
 
 export const ProfileFooter = styled.div`
+  border-top: 0.05rem solid rgba(255, 255, 255, 0.5);
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 8rem;
-  border-top: 0.05rem solid rgba(255, 255, 255, 0.5); ;
+  padding: 1.5rem 0.7rem;
 `;
 
 export const FooterIcon = styled.img`
@@ -117,13 +118,11 @@ export const FooterIcon = styled.img`
 `;
 
 export const FooterLink = styled.a`
-  padding: 1.5rem 0.7rem;
   text-decoration: none;
   color: #131313;
   font-weight: 700;
   display: flex;
   align-items: center;
-  justify-content: center;
   font-size: 0.8rem;
 
   @media only screen and (min-width: 786px) {
