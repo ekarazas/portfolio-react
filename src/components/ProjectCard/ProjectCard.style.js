@@ -32,10 +32,10 @@ export const Container = styled.div`
 
 export const Title = styled.h3`
   margin-top: 1rem;
-  font-size: 0.9rem;
+  font-size: 1.05rem;
 
   @media only screen and (min-width: 786px) {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
 `;
 

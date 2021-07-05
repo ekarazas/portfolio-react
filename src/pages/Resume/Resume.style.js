@@ -28,7 +28,7 @@ export const LeftBlock = styled.div`
   position: relative;
   margin: 0 1rem 1rem;
 
-  @media only screen and (min-width: 350px) {
+  @media only screen and (min-width: 375px) {
     margin: 0 2rem 1rem;
   }
 
@@ -43,7 +43,7 @@ export const RightBlock = styled.div`
   overflow: hidden;
   border-radius: 0.5rem;
 
-  @media only screen and (min-width: 350px) {
+  @media only screen and (min-width: 375px) {
     margin: 0 2rem;
   }
 
