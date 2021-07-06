@@ -43,7 +43,7 @@ export const RightBlock = styled.div`
   overflow: hidden;
   border-radius: 0.5rem;
 
-  @media only screen and (min-width: 675px) {
+  @media only screen and (min-width: 375px) {
     margin: 0 2rem;
   }
 

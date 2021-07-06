@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./ProfileCard.style";
-import CV from "../../assets/downloads/EivinasCV_2021-06-26.pdf";
+import CV from "../../assets/downloads/Eivinas_Karažas_2021.pdf";
 
 const ProfileCard = ({ profileImage, name, career }) => {
   return (

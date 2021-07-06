@@ -7,7 +7,7 @@ const HomeTitle = () => {
       Hello, I'm
       <S.StyledSpan> Eivinas Karažas</S.StyledSpan>.
       <br />
-      I'm front-end web developer.
+      I'm a front-end web developer.
     </S.RegularText>
   );
 };

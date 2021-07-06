@@ -3,7 +3,7 @@ import { Portfolio, Todo, Recipes } from "../assets/projects";
 const projectsData = [
   {
     id: 1,
-    title: "Recipe Book - Vue Project",
+    title: "Recipe Book - Vue/NodeJS Express Project",
     image: Recipes,
     url: "",
     front_url: "https://github.com/ekarazas/recipes-client",
@@ -11,7 +11,7 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Todo List - React Project",
+    title: "Todo List - React/NodeJS Express Project",
     image: Todo,
     url: "",
     front_url: "https://github.com/ekarazas/todos-react-front",

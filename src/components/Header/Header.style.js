@@ -33,11 +33,6 @@ export const StyledLink = styled(Link)`
   position: relative;
   transition: ease-in 0.2s;
 
-  &:focus {
-    color: #00fff3;
-    border: 0.01rem solid #00fff3;
-  }
-
   @media only screen and (min-width: 375px) {
     padding: 0.8rem 1rem;
   }

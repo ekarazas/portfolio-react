@@ -10,6 +10,7 @@ export const FlexBlock = styled.section`
 
 export const Container = styled.div`
   width: calc(50% - 0.5rem);
+  border-radius: 0.5rem;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -49,11 +50,26 @@ export const Icon = styled.div`
   }
   &.website {
     background-image: url("https://image.flaticon.com/icons/png/512/13/13706.png");
+    margin-left: 0.4rem;
+  }
+  &.glitch {
+    background-image: url("https://icons-for-free.com/iconfiles/png/512/glitch-1324440164351843954.png");
+    margin-left: -0.5rem;
+  }
+
+  @media only screen and (min-width: 786px) {
+    &.glitch {
+      margin-left: -0.6rem;
+    }
+    &.website {
+      margin-left: 0.5rem;
+    }
   }
 `;
 
 export const Image = styled.img`
   vertical-align: middle;
+  border-radius: 0.5rem 0.5rem 0 0;
   width: 100%;
   height: 14rem;
   object-fit: cover;
@@ -67,6 +83,7 @@ export const Image = styled.img`
       -ms-transition: all 0.3s ease-in;
       -o-transition: all 0.3s ease-in;
       transition: all 0.3s ease-in;
+      border-radius: 0;
       &&.translate-left {
         transform: translatex(-30%) scale(1.6);
         -ms-transform: translatex(-30%) scale(1.6);
