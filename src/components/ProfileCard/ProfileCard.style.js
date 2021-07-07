@@ -108,8 +108,11 @@ export const ProfileFooter = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 8rem;
   padding: 1.5rem 0.7rem;
+
+  @media only screen and (min-width: 1024px) {
+    margin-top: 8rem;
+  }
 `;
 
 export const FooterIcon = styled.img`
