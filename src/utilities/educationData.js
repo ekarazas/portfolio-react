@@ -2,7 +2,7 @@ const educationData = [
   {
     id: 1,
     degreeTitle: "Front-end",
-    year: "2020 - Present",
+    year: "2020 - 2021",
     institute: "Code Academy",
     location: "Vilnius",
     degree:

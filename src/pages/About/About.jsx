@@ -2,7 +2,8 @@ import React from "react";
 import * as S from "./About.style";
 import ProfilePhoto from "../../assets/ProfileImage.jpg";
 import languageSkills from "../../utilities/languageSkills";
-import softwareSkills from "../../utilities/softwareSkills";
+import hardSkills from "../../utilities/hardSkills";
+import softSkills from "../../utilities/softSkills";
 
 // components
 import ProfileCard from "../../components/ProfileCard/ProfileCard";
@@ -80,15 +81,26 @@ const About = () => {
               </S.Subtitle>
               <S.FlexContainer>
                 <S.SkillColumn>
-                  <S.SmallTitle>Software skills</S.SmallTitle>
-                  {softwareSkills &&
-                    softwareSkills.map((skill) => (
-                      <SkillsLevel
-                        key={skill.id}
-                        skill={skill.skill}
-                        level={skill.level}
-                      />
-                    ))}
+                  <S.SmallTitle>Hard skills</S.SmallTitle>
+                  <S.StyledList>
+                    {hardSkills &&
+                      hardSkills.map((skill) => (
+                        <S.StyledListItem key={skill.id}>
+                          {skill.skill}
+                        </S.StyledListItem>
+                      ))}
+                  </S.StyledList>
+                </S.SkillColumn>
+                <S.SkillColumn>
+                  <S.SmallTitle>Soft skills</S.SmallTitle>
+                  <S.StyledList>
+                    {softSkills &&
+                      softSkills.map((skill) => (
+                        <S.StyledListItem key={skill.skill}>
+                          {skill.skill}
+                        </S.StyledListItem>
+                      ))}
+                  </S.StyledList>
                 </S.SkillColumn>
               </S.FlexContainer>
             </S.ContentBlock>

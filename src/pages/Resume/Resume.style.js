@@ -111,22 +111,18 @@ export const SmallTitle = styled.h3`
 `;
 
 export const Date = styled.div`
+  color: #00fff3;
+  border: 0.05rem solid #00fff3;
   display: inline-block;
   font-size: 0.8rem;
   line-height: 1.1rem;
   padding: 0.1rem 0.4rem;
-  border: 0.05rem solid #777;
   border-radius: 0.5rem;
   margin-bottom: 0.7rem;
 `;
 
 export const ResumeItem = styled.div`
   margin-bottom: 1.5rem;
-
-  &:first-of-type ${Date} {
-    color: #00fff3;
-    border: 0.05rem solid #00fff3;
-  }
 `;
 
 export const Name = styled.div`

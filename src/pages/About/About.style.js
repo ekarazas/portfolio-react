@@ -155,6 +155,30 @@ export const SkillColumn = styled.div`
 
   @media only screen and (min-width: 785px) {
     margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+`;
+
+export const StyledList = styled.ul`
+  padding-left: 1.1rem;
+  list-style: none;
+`;
+
+export const StyledListItem = styled.li`
+  &:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+
+  &::before {
+    content: "${(p) => "•"}";
+    color: #00fff3;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
   }
 `;
 
