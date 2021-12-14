@@ -29,12 +29,12 @@ const About = () => {
               <S.FirstRow>
                 <S.TextBlock>
                   Passionate and goal-oriented individual with fresh knowledge
-                  of front-end web development using popular libraries and
-                  frameworks like <b>React</b>, <b>Vue.js</b>. I have above
-                  average skills of <b>HTML</b>, <b>CSS</b> and
+                  of front-end web development using one of most popular
+                  libraries - <b>React.js</b>. I have above average skills of{" "}
+                  <b>HTML</b>, <b>CSS</b> and
                   <b> JavaScript</b>. I also have intermediate knowledge of
                   <b> Node.js</b> environment and <b>MySQL</b> databases.
-                  Furthermore, I have experience working with development
+                  Furthermore, I have experience in the development
                   platforms such as <b>Digital Ocean</b> and <b>Firebase</b>.
                 </S.TextBlock>
               </S.FirstRow>

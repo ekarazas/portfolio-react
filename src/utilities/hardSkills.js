@@ -27,6 +27,18 @@ const hardSkills = [
     id: 7,
     skill: "Git",
   },
+  {
+    id: 8,
+    skill: "Gatsby",
+  },
+  {
+    id: 9,
+    skill: "Adobe XD",
+  },
+  {
+    id: 10,
+    skill: "Figma",
+  },
 ];
 
 export default hardSkills;

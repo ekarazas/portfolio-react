@@ -13,7 +13,7 @@ const softSkills = [
   },
   {
     id: 4,
-    skill: "Friendliness",
+    skill: "Kindness",
   },
   {
     id: 5,
@@ -22,6 +22,14 @@ const softSkills = [
   {
     id: 6,
     skill: "Tolerance",
+  },
+  {
+    id: 7,
+    skill: "Problem Solving",
+  },
+  {
+    id: 8,
+    skill: "Self-motivation",
   },
 ];
 
