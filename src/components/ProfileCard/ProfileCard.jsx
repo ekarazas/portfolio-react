@@ -32,7 +32,7 @@ const ProfileCard = ({ profileImage, name, career }) => {
         </S.ContactsBlock>
       </S.ContentBlock>
       <S.ProfileFooter>
-        <S.FooterLink href={CV} download>
+        <S.FooterLink href={CV} target="_blank" download>
           <S.FooterText>DOWNLOAD CV</S.FooterText>
           <S.FooterIcon
             src="https://image.flaticon.com/icons/png/512/3580/3580085.png"
