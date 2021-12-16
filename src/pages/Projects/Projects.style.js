@@ -33,7 +33,7 @@ export const LeftBlock = styled.div`
   }
 
   @media only screen and (min-width: 1024px) {
-    margin: 0 0 0 2rem;
+    margin: 0 1rem 0 2rem;
   }
 `;
 
@@ -48,8 +48,6 @@ export const RightBlock = styled.div`
   }
 
   @media only screen and (min-width: 1024px) {
-    border-radius: 0 0.5rem 0.5rem 0;
-
     margin: 0 2rem 0 0;
   }
 `;
@@ -79,7 +77,9 @@ export const ContentBlock = styled.section`
   }
 `;
 
-export const Subtitle = styled.h2``;
+export const Subtitle = styled.h2`
+  margin-bottom: 2rem;
+`;
 
 export const ColoredSpan = styled.span`
   color: #00fff3;

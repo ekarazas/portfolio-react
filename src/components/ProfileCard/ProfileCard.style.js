@@ -111,7 +111,7 @@ export const ProfileFooter = styled.div`
   padding: 1.5rem 0.7rem;
 
   @media only screen and (min-width: 1024px) {
-    margin-top: 8rem;
+    margin-top: 4.8rem;
   }
 `;
 

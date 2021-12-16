@@ -7,10 +7,7 @@ function ProjectCard({ projects }) {
       {!projects && "There are no projects yet."}
       {projects &&
         projects.map((project) => (
-          <S.Container
-            key={project.id}
-            className={project.id % 2 === 0 ? "margin-left" : "margin-right"}
-          >
+          <S.Container key={project.id}>
             <S.Image
               className={
                 project.id % 2 === 0 ? "translate-left" : "translate-right"

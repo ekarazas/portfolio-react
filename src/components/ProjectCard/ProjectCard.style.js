@@ -9,12 +9,12 @@ export const FlexBlock = styled.section`
 `;
 
 export const Container = styled.div`
-  width: calc(50% - 0.5rem);
+  width: calc(50% - 1rem);
   border-radius: 0.5rem;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   box-sizing: border-box;
 
   @media only screen and (max-width: 785px) {
@@ -22,11 +22,8 @@ export const Container = styled.div`
   }
 
   @media only screen and (min-width: 780px) {
-    &.margin-left {
-      margin-left: 0.5rem;
-    }
-    &.margin-right {
-      margin-right: 0.5rem;
+    &:nth-child(2n) {
+      margin-left: 2rem;
     }
   }
 `;
