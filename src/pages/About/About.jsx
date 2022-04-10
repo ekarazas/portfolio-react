@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./About.style";
-import ProfilePhoto from "../../assets/ProfileImage.jpg";
+import ProfilePhoto from "../../assets/images/ProfileImage.jpg";
 import languageSkills from "../../utilities/languageSkills";
 import hardSkills from "../../utilities/hardSkills";
 import softSkills from "../../utilities/softSkills";
@@ -8,6 +8,10 @@ import softSkills from "../../utilities/softSkills";
 // components
 import ProfileCard from "../../components/ProfileCard/ProfileCard";
 import SkillsLevel from "../../components/SkillsLevel/SkillsLevel";
+
+//icons
+import smartphone from "../../assets/icons/smartphone.svg";
+import email from "../../assets/icons/email.svg";
 
 const About = () => {
   return (
@@ -34,8 +38,8 @@ const About = () => {
                   <b>HTML</b>, <b>CSS</b> and
                   <b> JavaScript</b>. I also have intermediate knowledge of
                   <b> Node.js</b> environment and <b>MySQL</b> databases.
-                  Furthermore, I have experience in the development
-                  platforms such as <b>Digital Ocean</b> and <b>Firebase</b>.
+                  Furthermore, I have experience in the development platforms
+                  such as <b>Digital Ocean</b> and <b>Firebase</b>.
                 </S.TextBlock>
               </S.FirstRow>
               <S.SecondRow>
@@ -44,19 +48,13 @@ const About = () => {
                     <S.SmallTitle>Personal Information</S.SmallTitle>
                     <S.ContactBlock>
                       <S.Contact href="tel:+37064887747">
-                        <S.ContactIcon
-                          src="https://image.flaticon.com/icons/png/512/15/15874.png"
-                          alt="phone icon"
-                        />
+                        <S.ContactIcon src={smartphone} alt="phone icon" />
                         +370 648 87747
                       </S.Contact>
                     </S.ContactBlock>
                     <S.ContactBlock>
                       <S.Contact href="mailto:eivinaskarazas@gmail.com">
-                        <S.ContactIcon
-                          src="https://image.flaticon.com/icons/png/512/16/16475.png"
-                          alt="letter icon"
-                        />
+                        <S.ContactIcon src={email} alt="email icon" />
                         eivinaskarazas@gmail.com
                       </S.Contact>
                     </S.ContactBlock>

@@ -37,22 +37,10 @@ export const Title = styled.h3`
   }
 `;
 
-export const Icon = styled.div`
+export const Icon = styled.img`
   width: 25px;
   height: 25px;
-  background-size: cover;
   margin-right: 0.5rem;
-  &.github {
-    background-image: url("https://image.flaticon.com/icons/png/512/733/733609.png");
-  }
-  &.website {
-    background-image: url("https://image.flaticon.com/icons/png/512/13/13706.png");
-    margin-left: 0.4rem;
-  }
-  &.glitch {
-    background-image: url("https://icons-for-free.com/iconfiles/png/512/glitch-1324440164351843954.png");
-    margin-left: -0.5rem;
-  }
 
   @media only screen and (min-width: 786px) {
     &.glitch {
@@ -63,6 +51,33 @@ export const Icon = styled.div`
     }
   }
 `;
+
+// export const Icon = styled.div`
+//   width: 25px;
+//   height: 25px;
+//   background-size: cover;
+//   margin-right: 0.5rem;
+//   &.github {
+//     background-image: url("../../assets/icons/github.svg");
+//   }
+//   &.website {
+//     background-image: url("https://image.flaticon.com/icons/png/512/13/13706.png");
+//     margin-left: 0.4rem;
+//   }
+//   &.glitch {
+//     background-image: url("https://icons-for-free.com/iconfiles/png/512/glitch-1324440164351843954.png");
+//     margin-left: -0.5rem;
+//   }
+
+//   @media only screen and (min-width: 786px) {
+//     &.glitch {
+//       margin-left: -0.6rem;
+//     }
+//     &.website {
+//       margin-left: 0.5rem;
+//     }
+//   }
+// `;
 
 export const Image = styled.img`
   vertical-align: middle;

@@ -1,11 +1,15 @@
 import React from "react";
 import * as S from "./Resume.style";
-import ProfilePhoto from "../../assets/ProfileImage.jpg";
+import ProfilePhoto from "../../assets/images/ProfileImage.jpg";
 import experienceData from "../../utilities/experienceData";
 import educationData from "../../utilities/educationData";
 
 // components
 import ProfileCard from "../../components/ProfileCard/ProfileCard";
+
+//icons
+import briefcase from "../../assets/icons/briefcase.svg";
+import mortarboard from "../../assets/icons/mortarboard.svg";
 
 const Resume = () => {
   return (
@@ -28,10 +32,7 @@ const Resume = () => {
                 <S.FlexContainer>
                   <S.FirstColumn>
                     <S.SmallTitle>
-                      <S.Icon
-                        src="https://image.flaticon.com/icons/png/512/2630/2630088.png"
-                        alt="Briefcase"
-                      />
+                      <S.Icon src={briefcase} alt="briefcase" />
                       Experience
                     </S.SmallTitle>
                     {experienceData &&
@@ -49,10 +50,7 @@ const Resume = () => {
                   </S.FirstColumn>
                   <S.SecondColumn>
                     <S.SmallTitle>
-                      <S.Icon
-                        src="https://image.flaticon.com/icons/png/512/3604/3604021.png"
-                        alt="university"
-                      />
+                      <S.Icon src={mortarboard} alt="mortarboard" />
                       Education
                     </S.SmallTitle>
                     {educationData &&

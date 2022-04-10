@@ -1,6 +1,11 @@
 import React from "react";
 import * as S from "./ProjectCard.style";
 
+//icons
+import brackets from "../../assets/icons/brackets.svg";
+import github from "../../assets/icons/github.svg";
+import glitch from "../../assets/icons/glitch.svg";
+
 function ProjectCard({ projects }) {
   return (
     <S.FlexBlock projects={projects}>
@@ -19,7 +24,7 @@ function ProjectCard({ projects }) {
               {project.url && (
                 <S.SocialLink href={project.url} target="_blank">
                   <S.FlexLink>
-                    <S.Icon className="website" />
+                    <S.Icon className="website" src={brackets} />
                     Check the website
                   </S.FlexLink>
                 </S.SocialLink>
@@ -28,7 +33,7 @@ function ProjectCard({ projects }) {
               {project.front_url && (
                 <S.SocialLink href={project.front_url} target="_blank">
                   <S.FlexLink>
-                    <S.Icon className="github" />
+                    <S.Icon className="github" src={github} />
                     GitHub Front-end
                   </S.FlexLink>
                 </S.SocialLink>
@@ -37,7 +42,7 @@ function ProjectCard({ projects }) {
               {project.back_url && project.back_url.includes("github") && (
                 <S.SocialLink href={project.back_url} target="_blank">
                   <S.FlexLink>
-                    <S.Icon className="github" />
+                    <S.Icon className="github" src={github} />
                     GitHub Back-end
                   </S.FlexLink>
                 </S.SocialLink>
@@ -46,7 +51,7 @@ function ProjectCard({ projects }) {
               {project.back_url && project.back_url.includes("glitch") && (
                 <S.SocialLink href={project.back_url} target="_blank">
                   <S.FlexLink>
-                    <S.Icon className="glitch" />
+                    <S.Icon className="glitch" src={glitch} />
                     Glitch Back-end
                   </S.FlexLink>
                 </S.SocialLink>
