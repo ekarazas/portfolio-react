@@ -1,7 +1,7 @@
 import React from "react";
 import * as S from "./Projects.style";
 import projectsData from "../../utilities/projectsData";
-import ProfilePhoto from "../../assets/ProfileImage.jpg";
+import ProfilePhoto from "../../assets/images/ProfileImage.jpg";
 
 // components
 import ProfileCard from "../../components/ProfileCard/ProfileCard";

@@ -9,12 +9,12 @@ export const FlexBlock = styled.section`
 `;
 
 export const Container = styled.div`
-  width: calc(50% - 0.5rem);
+  width: calc(50% - 1rem);
   border-radius: 0.5rem;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   box-sizing: border-box;
 
   @media only screen and (max-width: 785px) {
@@ -22,11 +22,8 @@ export const Container = styled.div`
   }
 
   @media only screen and (min-width: 780px) {
-    &.margin-left {
-      margin-left: 0.5rem;
-    }
-    &.margin-right {
-      margin-right: 0.5rem;
+    &:nth-child(2n) {
+      margin-left: 2rem;
     }
   }
 `;
@@ -40,22 +37,10 @@ export const Title = styled.h3`
   }
 `;
 
-export const Icon = styled.div`
+export const Icon = styled.img`
   width: 25px;
   height: 25px;
-  background-size: cover;
   margin-right: 0.5rem;
-  &.github {
-    background-image: url("https://image.flaticon.com/icons/png/512/733/733609.png");
-  }
-  &.website {
-    background-image: url("https://image.flaticon.com/icons/png/512/13/13706.png");
-    margin-left: 0.4rem;
-  }
-  &.glitch {
-    background-image: url("https://icons-for-free.com/iconfiles/png/512/glitch-1324440164351843954.png");
-    margin-left: -0.5rem;
-  }
 
   @media only screen and (min-width: 786px) {
     &.glitch {
@@ -66,6 +51,33 @@ export const Icon = styled.div`
     }
   }
 `;
+
+// export const Icon = styled.div`
+//   width: 25px;
+//   height: 25px;
+//   background-size: cover;
+//   margin-right: 0.5rem;
+//   &.github {
+//     background-image: url("../../assets/icons/github.svg");
+//   }
+//   &.website {
+//     background-image: url("https://image.flaticon.com/icons/png/512/13/13706.png");
+//     margin-left: 0.4rem;
+//   }
+//   &.glitch {
+//     background-image: url("https://icons-for-free.com/iconfiles/png/512/glitch-1324440164351843954.png");
+//     margin-left: -0.5rem;
+//   }
+
+//   @media only screen and (min-width: 786px) {
+//     &.glitch {
+//       margin-left: -0.6rem;
+//     }
+//     &.website {
+//       margin-left: 0.5rem;
+//     }
+//   }
+// `;
 
 export const Image = styled.img`
   vertical-align: middle;

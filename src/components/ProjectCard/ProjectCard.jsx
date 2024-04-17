@@ -1,6 +1,11 @@
 import React from 'react';
 import * as S from './ProjectCard.style';
 
+//icons
+import brackets from "../../assets/icons/brackets.svg";
+import github from "../../assets/icons/github.svg";
+import glitch from "../../assets/icons/glitch.svg";
+
 function ProjectCard({ projects }) {
   return (
     <S.FlexBlock projects={projects}>

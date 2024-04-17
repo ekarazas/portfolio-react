@@ -33,7 +33,7 @@ export const LeftBlock = styled.div`
   }
 
   @media only screen and (min-width: 1024px) {
-    margin: 0 0 0 2rem;
+    margin: 0 1rem 0 2rem;
   }
 `;
 
@@ -48,8 +48,6 @@ export const RightBlock = styled.div`
   }
 
   @media only screen and (min-width: 1024px) {
-    border-radius: 0 0.5rem 0.5rem 0;
-
     margin: 0 2rem 0 0;
   }
 `;
@@ -150,13 +148,15 @@ export const SecondColumn = styled.div`
 `;
 
 export const SkillColumn = styled.div`
-  margin-bottom: 2rem;
   width: 100%;
 
-  @media only screen and (min-width: 785px) {
-    margin-bottom: 0;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 
+  @media only screen and (min-width: 785px) {
     &:not(:last-child) {
+      margin-bottom: 0;
       margin-right: 2rem;
     }
   }

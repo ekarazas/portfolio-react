@@ -9,6 +9,10 @@ import UniversityIcon from '../../assets/icons/university.svg';
 // components
 import ProfileCard from '../../components/ProfileCard/ProfileCard';
 
+//icons
+import briefcase from "../../assets/icons/briefcase.svg";
+import mortarboard from "../../assets/icons/mortarboard.svg";
+
 const Resume = () => {
   return (
     <S.Resume>
