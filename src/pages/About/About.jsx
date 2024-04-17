@@ -11,10 +11,6 @@ import EnvelopeIcon from '../../assets/icons/envelope.svg';
 import ProfileCard from '../../components/ProfileCard/ProfileCard';
 import SkillsLevel from '../../components/SkillsLevel/SkillsLevel';
 
-//icons
-import smartphone from "../../assets/icons/smartphone.svg";
-import email from "../../assets/icons/email.svg";
-
 const About = () => {
   return (
     <S.About>
@@ -36,7 +32,7 @@ const About = () => {
                 <S.TextBlock>
                   Passionate and goal-oriented individual with fresh knowledge
                   of front-end web development using one of most popular
-                  libraries - <b>React.js</b>. I have above average skills of{" "}
+                  libraries - <b>React.js</b>. I have above average skills of{' '}
                   <b>HTML</b>, <b>CSS</b> and
                   <b> JavaScript</b>. I also have intermediate knowledge of
                   <b> Node.js</b> environment and <b>MySQL</b> databases.
