@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from './Resume.style';
-import ProfilePhoto from '../../assets/ProfileImage.jpg';
+import ProfilePhoto from '../../assets/images/ProfileImage.jpg';
 import experienceData from '../../utilities/experienceData';
 import educationData from '../../utilities/educationData';
 import BriefcaseIcon from '../../assets/icons/briefcase.svg';

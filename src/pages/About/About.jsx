@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from './About.style';
-import ProfilePhoto from '../../assets/ProfileImage.jpg';
+import ProfilePhoto from '../../assets/images/ProfileImage.jpg';
 import languageSkills from '../../utilities/languageSkills';
 import hardSkills from '../../utilities/hardSkills';
 import softSkills from '../../utilities/softSkills';
