@@ -1,13 +1,15 @@
-import React from "react";
-import * as S from "./About.style";
-import ProfilePhoto from "../../assets/ProfileImage.jpg";
-import languageSkills from "../../utilities/languageSkills";
-import hardSkills from "../../utilities/hardSkills";
-import softSkills from "../../utilities/softSkills";
+import React from 'react';
+import * as S from './About.style';
+import ProfilePhoto from '../../assets/ProfileImage.jpg';
+import languageSkills from '../../utilities/languageSkills';
+import hardSkills from '../../utilities/hardSkills';
+import softSkills from '../../utilities/softSkills';
+import PhoneIcon from '../../assets/icons/phone.svg';
+import EnvelopeIcon from '../../assets/icons/envelope.svg';
 
 // components
-import ProfileCard from "../../components/ProfileCard/ProfileCard";
-import SkillsLevel from "../../components/SkillsLevel/SkillsLevel";
+import ProfileCard from '../../components/ProfileCard/ProfileCard';
+import SkillsLevel from '../../components/SkillsLevel/SkillsLevel';
 
 const About = () => {
   return (
@@ -44,19 +46,13 @@ const About = () => {
                     <S.SmallTitle>Personal Information</S.SmallTitle>
                     <S.ContactBlock>
                       <S.Contact href="tel:+37064887747">
-                        <S.ContactIcon
-                          src="https://image.flaticon.com/icons/png/512/15/15874.png"
-                          alt="phone icon"
-                        />
+                        <S.ContactIcon src={PhoneIcon} alt="phone icon" />
                         +370 648 87747
                       </S.Contact>
                     </S.ContactBlock>
                     <S.ContactBlock>
                       <S.Contact href="mailto:eivinaskarazas@gmail.com">
-                        <S.ContactIcon
-                          src="https://image.flaticon.com/icons/png/512/16/16475.png"
-                          alt="letter icon"
-                        />
+                        <S.ContactIcon src={EnvelopeIcon} alt="email icon" />
                         eivinaskarazas@gmail.com
                       </S.Contact>
                     </S.ContactBlock>

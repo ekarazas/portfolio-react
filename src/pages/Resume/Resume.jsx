@@ -1,11 +1,13 @@
-import React from "react";
-import * as S from "./Resume.style";
-import ProfilePhoto from "../../assets/ProfileImage.jpg";
-import experienceData from "../../utilities/experienceData";
-import educationData from "../../utilities/educationData";
+import React from 'react';
+import * as S from './Resume.style';
+import ProfilePhoto from '../../assets/ProfileImage.jpg';
+import experienceData from '../../utilities/experienceData';
+import educationData from '../../utilities/educationData';
+import BriefcaseIcon from '../../assets/icons/briefcase.svg';
+import UniversityIcon from '../../assets/icons/university.svg';
 
 // components
-import ProfileCard from "../../components/ProfileCard/ProfileCard";
+import ProfileCard from '../../components/ProfileCard/ProfileCard';
 
 const Resume = () => {
   return (
@@ -28,10 +30,7 @@ const Resume = () => {
                 <S.FlexContainer>
                   <S.FirstColumn>
                     <S.SmallTitle>
-                      <S.Icon
-                        src="https://image.flaticon.com/icons/png/512/2630/2630088.png"
-                        alt="Briefcase"
-                      />
+                      <S.Icon src={BriefcaseIcon} alt="Briefcase" />
                       Experience
                     </S.SmallTitle>
                     {experienceData &&
@@ -49,10 +48,7 @@ const Resume = () => {
                   </S.FirstColumn>
                   <S.SecondColumn>
                     <S.SmallTitle>
-                      <S.Icon
-                        src="https://image.flaticon.com/icons/png/512/3604/3604021.png"
-                        alt="university"
-                      />
+                      <S.Icon src={UniversityIcon} alt="university" />
                       Education
                     </S.SmallTitle>
                     {educationData &&
