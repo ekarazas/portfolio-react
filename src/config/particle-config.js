@@ -1,112 +1,69 @@
 const particlesConfig = {
-  particles: {
-    number: {
-      value: 500,
-      density: {
-        enable: true,
-        value_area: 9000,
-      },
-    },
+  background: {
     color: {
-      value: "#ffffff",
+      value: '#10151f',
     },
-    shape: {
-      type: "circle",
-      stroke: {
-        width: 0,
-        color: "#000000",
-      },
-      polygon: {
-        nb_sides: 5,
-      },
-      image: {
-        src: "img/github.svg",
-        width: 100,
-        height: 100,
-      },
-    },
-    opacity: {
-      value: 0.5,
-      random: false,
-      anim: {
+  },
+  fpsLimit: 120,
+  interactivity: {
+    events: {
+      onClick: {
         enable: false,
-        speed: 1,
-        opacity_min: 0.1,
-        sync: false,
+        mode: 'repulse',
+      },
+      onHover: {
+        enable: true,
+        mode: 'grab',
       },
     },
-    size: {
-      value: 3,
-      random: true,
-      anim: {
-        enable: false,
-        speed: 40,
-        size_min: 0.1,
-        sync: false,
+    modes: {
+      push: {
+        distance: 200,
+        duration: 15,
+      },
+      grab: {
+        distance: 180,
       },
     },
-    line_linked: {
-      enable: true,
+  },
+  particles: {
+    color: {
+      value: '#FFFFFF',
+    },
+    links: {
+      color: '#FFFFFF',
       distance: 150,
-      color: "#ffffff",
-      opacity: 0.4,
+      enable: true,
+      opacity: 0.2,
       width: 1,
     },
     move: {
+      direction: 'none',
       enable: true,
-      speed: 1,
-      direction: "none",
+      outModes: {
+        default: 'bounce',
+      },
       random: false,
+      speed: 1,
       straight: false,
-      out_mode: "out",
-      bounce: false,
-      attract: {
-        enable: false,
-        rotateX: 600,
-        rotateY: 1200,
-      },
     },
-  },
-  interactivity: {
-    detect_on: "canvas",
-    events: {
-      onhover: {
+    number: {
+      density: {
         enable: true,
-        mode: "grab",
       },
-      onclick: {
-        enable: false,
-        mode: "push",
-      },
-      resize: true,
+      value: 150,
     },
-    modes: {
-      grab: {
-        distance: 220,
-        line_linked: {
-          opacity: 0.4,
-        },
-      },
-      bubble: {
-        distance: 400,
-        size: 40,
-        duration: 2,
-        opacity: 8,
-        speed: 3,
-      },
-      repulse: {
-        distance: 200,
-        duration: 0.4,
-      },
-      push: {
-        particles_nb: 4,
-      },
-      remove: {
-        particles_nb: 2,
-      },
+    opacity: {
+      value: 0.5,
+    },
+    shape: {
+      type: 'circle',
+    },
+    size: {
+      value: { min: 1, max: 3 },
     },
   },
-  retina_detect: true,
+  detectRetina: true,
 };
 
 export default particlesConfig;

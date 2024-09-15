@@ -4,8 +4,8 @@ import ProfilePhoto from '../../assets/images/ProfileImage.jpg';
 import languageSkills from '../../utilities/languageSkills';
 import hardSkills from '../../utilities/hardSkills';
 import softSkills from '../../utilities/softSkills';
-import PhoneIcon from '../../assets/icons/phone.svg';
-import EnvelopeIcon from '../../assets/icons/envelope.svg';
+import PhoneIcon from '../../assets/icons/phone.svg?react';
+import EnvelopeIcon from '../../assets/icons/envelope.svg?react';
 
 // components
 import ProfileCard from '../../components/ProfileCard/ProfileCard';

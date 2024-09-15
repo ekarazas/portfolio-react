@@ -3,8 +3,8 @@ import * as S from './Resume.style';
 import ProfilePhoto from '../../assets/images/ProfileImage.jpg';
 import experienceData from '../../utilities/experienceData';
 import educationData from '../../utilities/educationData';
-import BriefcaseIcon from '../../assets/icons/briefcase.svg';
-import UniversityIcon from '../../assets/icons/university.svg';
+import BriefcaseIcon from '../../assets/icons/briefcase.svg?react';
+import UniversityIcon from '../../assets/icons/university.svg?react';
 
 // components
 import ProfileCard from '../../components/ProfileCard/ProfileCard';

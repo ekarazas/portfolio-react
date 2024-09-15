@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Resume = styled.main`
   min-height: calc(100vh - 8rem);

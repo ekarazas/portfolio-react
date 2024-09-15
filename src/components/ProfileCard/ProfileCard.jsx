@@ -1,9 +1,9 @@
 import React from 'react';
 import * as S from './ProfileCard.style';
 import CV from '../../assets/downloads/Eivinas_Karažas_2021-07-22.pdf';
-import LinkedinIcon from '../../assets/icons/linkedin.svg';
-import GithubIcon from '../../assets/icons/github.svg';
-import DownloadIcon from '../../assets/icons/download.svg';
+import LinkedinIcon from '../../assets/icons/linkedin.svg?react';
+import GithubIcon from '../../assets/icons/github.svg?react';
+import DownloadIcon from '../../assets/icons/download.svg?react';
 
 const ProfileCard = ({ profileImage, name, career }) => {
   return (
