@@ -1,35 +1,27 @@
 const softSkills = [
   {
-    id: 1,
-    skill: "Communication",
-  },
-  {
     id: 2,
-    skill: "Adaptability",
+    skill: 'Adaptability',
   },
   {
     id: 3,
-    skill: "Time Management",
+    skill: 'Time Management',
   },
   {
     id: 4,
-    skill: "Kindness",
-  },
-  {
-    id: 5,
-    skill: "Sensitivity",
+    skill: 'Kindness',
   },
   {
     id: 6,
-    skill: "Tolerance",
+    skill: 'Tolerance',
   },
   {
     id: 7,
-    skill: "Problem Solving",
+    skill: 'Problem Solving',
   },
   {
     id: 8,
-    skill: "Self-motivation",
+    skill: 'Self-motivation',
   },
 ];
 

@@ -7,7 +7,7 @@ const languageSkills = [
   {
     id: 2,
     language_skill: "English",
-    level: 80,
+    level: 90,
   },
 ];
 

@@ -51,9 +51,9 @@ const About = () => {
                       </S.Contact>
                     </S.ContactBlock>
                     <S.ContactBlock>
-                      <S.Contact href="mailto:eivinaskarazas@gmail.com">
+                      <S.Contact href="mailto:developer.eivinas@gmail.com">
                         <S.ContactIcon src={EnvelopeIcon} alt="email icon" />
-                        eivinaskarazas@gmail.com
+                        developer.eivinas@gmail.com
                       </S.Contact>
                     </S.ContactBlock>
                   </S.FirstColumn>
