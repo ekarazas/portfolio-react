@@ -5,17 +5,17 @@ body {
 }
 
 #particles > canvas {
-  background: linear-gradient(
-    60deg,
-    #0c2d50,
-    #2b366a,
-    #4b3e80,
-    #6f448e,
-    #944a94,
-    #ba4f8f,
-    #df5780,
-    #ff6565
-  );
+  background: radial-gradient(
+    circle at 50% 50%,
+    #161f37,
+    #12182f,
+    #0e1228,
+    #0a0c21,
+    #07071a,
+    #040313,
+    #02010c,
+    #010006
+  ); /* made at https://learnui.design/tools/gradient-generator.html */
 }
 
 ::-webkit-scrollbar {
