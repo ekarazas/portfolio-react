@@ -21,7 +21,7 @@ const projectsData = [
     id: 3,
     title: "Portfolio - React Project",
     image: Portfolio,
-    url: "https://karazas.lt",
+    url: "https://karazas.netlify.app",
     front_url: "https://github.com/ekarazas/portfolio-react",
     back_url: "",
   },
