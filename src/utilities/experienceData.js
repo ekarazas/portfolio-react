@@ -6,7 +6,7 @@ const experienceData = [
     companyName: 'Neurotechnology',
     location: 'Vilnius, Lithuania',
     description:
-      'Developed and maintained complex web applications for critical government systems, including voter management, criminal investigation, and adjudication processes. Built scalable and maintainable solutions using React.js and TypeScript, with a focus on performance and usability. Designed intuitive interfaces with Material UI, managed application state with Zustand, and optimized workflows through React Hook Forms. Ensured application reliability and quality through when testing with Vitest and React Testing Library, delivering high-quality systems under strict deadlines.',
+      'Developed and maintained complex web applications for critical government systems, including voter management, criminal investigation, and adjudication processes. Built scalable and maintainable solutions using React.js and TypeScript, with a focus on performance and usability. Designed intuitive interfaces with Material UI, managed application state with Zustand, and optimized workflows through React Hook Forms. Ensured application reliability and quality when testing with Vitest and React Testing Library, delivering high-quality systems under strict deadlines.',
   },
   {
     id: 2,
