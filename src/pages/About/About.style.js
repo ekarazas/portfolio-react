@@ -91,6 +91,8 @@ export const FirstRow = styled.div`
 
 export const TextBlock = styled.div`
   margin-bottom: 1rem;
+  max-height: 200px;
+  overflow-y: auto;
 `;
 
 export const SecondRow = styled.div``;

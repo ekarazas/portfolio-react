@@ -1,35 +1,47 @@
 const hardSkills = [
   {
     id: 1,
-    skill: 'HTML/CSS',
+    skill: "React.js",
   },
   {
     id: 2,
-    skill: 'JavaScript',
+    skill: "HTML/CSS",
   },
   {
     id: 3,
-    skill: 'Node.js',
+    skill: "JavaScript",
   },
   {
     id: 4,
-    skill: 'React.js',
+    skill: "Typescript",
+  },
+  {
+    id: 5,
+    skill: "Konva.js",
   },
   {
     id: 6,
-    skill: 'MySQL',
+    skill: "React Hook Forms",
   },
   {
     id: 7,
-    skill: 'Git',
+    skill: "MUI",
   },
   {
     id: 8,
-    skill: 'Gatsby',
+    skill: "Zustand",
+  },
+  {
+    id: 9,
+    skill: "Git",
   },
   {
     id: 10,
-    skill: 'Figma',
+    skill: "Vite",
+  },
+  {
+    id: 11,
+    skill: "Figma",
   },
 ];
 

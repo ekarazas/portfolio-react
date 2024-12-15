@@ -1,15 +1,15 @@
-import React from 'react';
-import * as S from './About.style';
-import ProfilePhoto from '../../assets/images/ProfileImage.jpg';
-import languageSkills from '../../utilities/languageSkills';
-import hardSkills from '../../utilities/hardSkills';
-import softSkills from '../../utilities/softSkills';
-import PhoneIcon from '../../assets/icons/phone.svg?react';
-import EnvelopeIcon from '../../assets/icons/envelope.svg?react';
+import React from "react";
+import EnvelopeIcon from "../../assets/icons/envelope.svg?react";
+import PhoneIcon from "../../assets/icons/phone.svg?react";
+import ProfilePhoto from "../../assets/images/ProfileImage.jpg";
+import hardSkills from "../../utilities/hardSkills";
+import languageSkills from "../../utilities/languageSkills";
+import softSkills from "../../utilities/softSkills";
+import * as S from "./About.style";
 
 // components
-import ProfileCard from '../../components/ProfileCard/ProfileCard';
-import SkillsLevel from '../../components/SkillsLevel/SkillsLevel';
+import ProfileCard from "../../components/ProfileCard/ProfileCard";
+import SkillsLevel from "../../components/SkillsLevel/SkillsLevel";
 
 const About = () => {
   return (
@@ -30,14 +30,20 @@ const About = () => {
               </S.Subtitle>
               <S.FirstRow>
                 <S.TextBlock>
-                  Passionate and goal-oriented individual with fresh knowledge
-                  of front-end web development using one of most popular
-                  libraries - <b>React.js</b>. I have above average skills of{' '}
-                  <b>HTML</b>, <b>CSS</b> and
-                  <b> JavaScript</b>. I also have intermediate knowledge of
-                  <b> Node.js</b> environment and <b>MySQL</b> databases.
-                  Furthermore, I have experience in the development platforms
-                  such as <b>Digital Ocean</b> and <b>Firebase</b>.
+                  Passionate and goal-driven front-end web developer with 3
+                  years of experience building complex web applications using
+                  <b> React.js</b>. Proficient in <b>HTML</b>, <b>CSS</b>,
+                  <b> JavaScript</b> and <b>TypeScript</b>, with experience in
+                  tools like <b>React Query</b>, <b>Zustand</b>,
+                  <b> Material UI</b> and <b>Vitest</b>. Skilled in creating
+                  interactive interfaces using <b>Konva.js</b> and optimizing
+                  form management with <b>React Hook Forms</b>.
+                </S.TextBlock>
+                <S.TextBlock>
+                  Although my recent focus has been on front-end technologies, I
+                  bring foundational experience with <b>Node.js</b>,
+                  <b> MySQL</b>, <b>Digital Ocean</b> that can be refreshed as
+                  needed.
                 </S.TextBlock>
               </S.FirstRow>
               <S.SecondRow>
