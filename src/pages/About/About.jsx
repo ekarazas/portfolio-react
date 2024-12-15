@@ -30,8 +30,8 @@ const About = () => {
               </S.Subtitle>
               <S.FirstRow>
                 <S.TextBlock>
-                  Passionate and goal-driven front-end web developer with 3
-                  years of experience building complex web applications using
+                  Passionate and goal-driven front-end web developer with nearly
+                  3 years of experience building complex web applications using
                   <b> React.js</b>. Proficient in <b>HTML</b>, <b>CSS</b>,
                   <b> JavaScript</b> and <b>TypeScript</b>, with experience in
                   tools like <b>React Query</b>, <b>Zustand</b>,
