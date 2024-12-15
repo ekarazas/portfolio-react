@@ -1,20 +1,20 @@
 const particlesConfig = {
   background: {
     color: {
-      value: "#10151f",
+      value: '#10151f',
     },
   },
   fpsLimit: 120,
   interactivity: {
-    detectsOn: "canvas",
+    detectsOn: 'canvas',
     events: {
       onClick: {
         enable: false,
-        mode: "repulse",
+        mode: 'repulse',
       },
       onHover: {
         enable: true,
-        mode: "grab",
+        mode: 'grab',
       },
     },
     modes: {
@@ -29,20 +29,20 @@ const particlesConfig = {
   },
   particles: {
     color: {
-      value: "#FFFFFF",
+      value: '#FFFFFF',
     },
     links: {
-      color: "#FFFFFF",
+      color: '#FFFFFF',
       distance: 150,
       enable: true,
       opacity: 0.2,
       width: 1,
     },
     move: {
-      direction: "none",
+      direction: 'none',
       enable: true,
       outModes: {
-        default: "bounce",
+        default: 'bounce',
       },
       random: false,
       speed: 1,
@@ -58,7 +58,7 @@ const particlesConfig = {
       value: 0.5,
     },
     shape: {
-      type: "circle",
+      type: 'circle',
     },
     size: {
       value: { min: 1, max: 3 },

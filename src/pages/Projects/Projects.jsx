@@ -1,11 +1,11 @@
-import React from "react";
-import * as S from "./Projects.style";
-import projectsData from "../../utilities/projectsData";
-import ProfilePhoto from "../../assets/images/ProfileImage.jpg";
+import React from 'react';
+import ProfilePhoto from '../../assets/images/ProfileImage.jpg';
+import projectsData from '../../utilities/projectsData';
+import * as S from './Projects.style';
 
 // components
-import ProfileCard from "../../components/ProfileCard/ProfileCard";
-import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import ProfileCard from '../../components/ProfileCard/ProfileCard';
+import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
 const Projects = () => {
   return (
@@ -14,8 +14,8 @@ const Projects = () => {
         <S.LeftBlock>
           <ProfileCard
             profileImage={ProfilePhoto}
-            name="Eivinas Karažas"
-            career="Front-end developer"
+            name='Eivinas Karažas'
+            career='Front-end developer'
           ></ProfileCard>
         </S.LeftBlock>
         <S.RightBlock>

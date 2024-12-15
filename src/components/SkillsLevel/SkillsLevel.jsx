@@ -1,5 +1,5 @@
-import React from "react";
-import * as S from "./SkillsLevel.style";
+import React from 'react';
+import * as S from './SkillsLevel.style';
 
 function SkillsLevel({ skill, level }) {
   return (

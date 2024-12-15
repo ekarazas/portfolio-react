@@ -1,5 +1,5 @@
-import React from "react";
-import * as S from "./HomeTitle.style";
+import React from 'react';
+import * as S from './HomeTitle.style';
 
 const HomeTitle = () => {
   return (

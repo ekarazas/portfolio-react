@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 export const Header = styled.header`
   position: relative;
@@ -36,7 +36,7 @@ export const StyledLink = styled(Link)`
   &.active {
     color: #00fff3;
   }
-  
+
   @media only screen and (min-width: 375px) {
     padding: 0.8rem 1rem;
   }

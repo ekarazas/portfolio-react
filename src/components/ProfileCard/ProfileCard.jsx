@@ -1,9 +1,9 @@
 import React from 'react';
-import * as S from './ProfileCard.style';
 import CV from '../../assets/downloads/Eivinas_Karažas_2021-07-22.pdf';
-import LinkedinIcon from '../../assets/icons/linkedin.svg?react';
-import GithubIcon from '../../assets/icons/github.svg?react';
 import DownloadIcon from '../../assets/icons/download.svg?react';
+import GithubIcon from '../../assets/icons/github.svg?react';
+import LinkedinIcon from '../../assets/icons/linkedin.svg?react';
+import * as S from './ProfileCard.style';
 
 const ProfileCard = ({ profileImage, name, career }) => {
   return (
@@ -16,22 +16,22 @@ const ProfileCard = ({ profileImage, name, career }) => {
         <S.CareerTitle>{career}</S.CareerTitle>
         <S.ContactsBlock>
           <S.Contacts
-            href="https://www.linkedin.com/in/eivinas-kara%C5%BEas-a764361ba/"
-            target="_blank"
+            href='https://www.linkedin.com/in/eivinas-kara%C5%BEas-a764361ba/'
+            target='_blank'
           >
-            <S.ContactIcons src={LinkedinIcon} alt="LinkedIn Logo" />
+            <S.ContactIcons src={LinkedinIcon} alt='LinkedIn Logo' />
             Linkedin
           </S.Contacts>
-          <S.Contacts href="https://github.com/ekarazas" target="_blank">
-            <S.ContactIcons src={GithubIcon} alt="GitHub Logo" />
+          <S.Contacts href='https://github.com/ekarazas' target='_blank'>
+            <S.ContactIcons src={GithubIcon} alt='GitHub Logo' />
             GitHub
           </S.Contacts>
         </S.ContactsBlock>
       </S.ContentBlock>
       <S.ProfileFooter>
-        <S.FooterLink href={CV} target="_blank" download>
+        <S.FooterLink href={CV} target='_blank' download>
           <S.FooterText>DOWNLOAD CV</S.FooterText>
-          <S.FooterIcon src={DownloadIcon} alt="Download icon" />
+          <S.FooterIcon src={DownloadIcon} alt='Download icon' />
         </S.FooterLink>
       </S.ProfileFooter>
     </S.Card>

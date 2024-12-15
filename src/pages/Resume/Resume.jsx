@@ -1,10 +1,10 @@
 import React from 'react';
-import * as S from './Resume.style';
-import ProfilePhoto from '../../assets/images/ProfileImage.jpg';
-import experienceData from '../../utilities/experienceData';
-import educationData from '../../utilities/educationData';
 import BriefcaseIcon from '../../assets/icons/briefcase.svg?react';
 import UniversityIcon from '../../assets/icons/university.svg?react';
+import ProfilePhoto from '../../assets/images/ProfileImage.jpg';
+import educationData from '../../utilities/educationData';
+import experienceData from '../../utilities/experienceData';
+import * as S from './Resume.style';
 
 // components
 import ProfileCard from '../../components/ProfileCard/ProfileCard';
@@ -16,8 +16,8 @@ const Resume = () => {
         <S.LeftBlock>
           <ProfileCard
             profileImage={ProfilePhoto}
-            name="Eivinas Karažas"
-            career="Front-end developer"
+            name='Eivinas Karažas'
+            career='Front-end developer'
           ></ProfileCard>
         </S.LeftBlock>
         <S.RightBlock>
@@ -30,7 +30,7 @@ const Resume = () => {
                 <S.FlexContainer>
                   <S.FirstColumn>
                     <S.SmallTitle>
-                      <S.Icon src={BriefcaseIcon} alt="Briefcase" />
+                      <S.Icon src={BriefcaseIcon} alt='Briefcase' />
                       Experience
                     </S.SmallTitle>
                     {experienceData &&
@@ -48,7 +48,7 @@ const Resume = () => {
                   </S.FirstColumn>
                   <S.SecondColumn>
                     <S.SmallTitle>
-                      <S.Icon src={UniversityIcon} alt="university" />
+                      <S.Icon src={UniversityIcon} alt='university' />
                       Education
                     </S.SmallTitle>
                     {educationData &&
