@@ -5,7 +5,6 @@ import Header from './components/Header/Header';
 import ParticlesBackground from './components/ParticlesBackground';
 import About from './pages/About/About';
 import Home from './pages/Home/Home';
-import Projects from './pages/Projects/Projects';
 import Resume from './pages/Resume/Resume';
 
 const Routes = () => {
@@ -17,7 +16,6 @@ const Routes = () => {
         <Route exact path='/' component={Home} />
         <Route exact path='/about' component={About} />
         <Route exact path='/resume' component={Resume} />
-        <Route exact path='/projects' component={Projects} />
       </Switch>
       <Footer />
     </Router>

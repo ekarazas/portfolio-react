@@ -24,12 +24,6 @@ const Header = () => {
       >
         Resume
       </S.StyledLink>
-      <S.StyledLink
-        to='/projects'
-        className={splitLocation[1] === 'projects' ? 'active' : ''}
-      >
-        Projects
-      </S.StyledLink>
     </S.Header>
   );
 };
