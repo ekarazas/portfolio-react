@@ -1,5 +1,5 @@
 import React from 'react';
-import CV from '../../assets/downloads/Eivinas_Karažas_2021-07-22.pdf';
+import CV from '../../assets/downloads/Eivinas_Karažas_CV2022_edited.pdf';
 import DownloadIcon from '../../assets/icons/download.svg?react';
 import GithubIcon from '../../assets/icons/github.svg?react';
 import LinkedinIcon from '../../assets/icons/linkedin.svg?react';
