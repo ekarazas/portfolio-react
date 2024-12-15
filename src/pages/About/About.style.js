@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const About = styled.main`
   min-height: calc(100vh - 8rem);
@@ -175,7 +175,7 @@ export const StyledListItem = styled.li`
   }
 
   &::before {
-    content: "${(p) => "•"}";
+    content: '${(p) => '•'}';
     color: #00fff3;
     font-weight: bold;
     display: inline-block;

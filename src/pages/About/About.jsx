@@ -1,15 +1,15 @@
-import React from "react";
-import EnvelopeIcon from "../../assets/icons/envelope.svg?react";
-import PhoneIcon from "../../assets/icons/phone.svg?react";
-import ProfilePhoto from "../../assets/images/ProfileImage.jpg";
-import hardSkills from "../../utilities/hardSkills";
-import languageSkills from "../../utilities/languageSkills";
-import softSkills from "../../utilities/softSkills";
-import * as S from "./About.style";
+import React from 'react';
+import EnvelopeIcon from '../../assets/icons/envelope.svg?react';
+import PhoneIcon from '../../assets/icons/phone.svg?react';
+import ProfilePhoto from '../../assets/images/ProfileImage.jpg';
+import hardSkills from '../../utilities/hardSkills';
+import languageSkills from '../../utilities/languageSkills';
+import softSkills from '../../utilities/softSkills';
+import * as S from './About.style';
 
 // components
-import ProfileCard from "../../components/ProfileCard/ProfileCard";
-import SkillsLevel from "../../components/SkillsLevel/SkillsLevel";
+import ProfileCard from '../../components/ProfileCard/ProfileCard';
+import SkillsLevel from '../../components/SkillsLevel/SkillsLevel';
 
 const About = () => {
   return (
@@ -18,8 +18,8 @@ const About = () => {
         <S.LeftBlock>
           <ProfileCard
             profileImage={ProfilePhoto}
-            name="Eivinas Karažas"
-            career="Front-end developer"
+            name='Eivinas Karažas'
+            career='Front-end developer'
           ></ProfileCard>
         </S.LeftBlock>
         <S.RightBlock>
@@ -51,14 +51,14 @@ const About = () => {
                   <S.FirstColumn>
                     <S.SmallTitle>Personal Information</S.SmallTitle>
                     <S.ContactBlock>
-                      <S.Contact href="tel:+37064887747">
-                        <S.ContactIcon src={PhoneIcon} alt="phone icon" />
+                      <S.Contact href='tel:+37064887747'>
+                        <S.ContactIcon src={PhoneIcon} alt='phone icon' />
                         +370 648 87747
                       </S.Contact>
                     </S.ContactBlock>
                     <S.ContactBlock>
-                      <S.Contact href="mailto:developer.eivinas@gmail.com">
-                        <S.ContactIcon src={EnvelopeIcon} alt="email icon" />
+                      <S.Contact href='mailto:developer.eivinas@gmail.com'>
+                        <S.ContactIcon src={EnvelopeIcon} alt='email icon' />
                         developer.eivinas@gmail.com
                       </S.Contact>
                     </S.ContactBlock>
